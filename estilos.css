@@ -1,0 +1,17 @@
+circle {
+    fill:violet; 
+    stroke:red; 
+    stroke-width: 10; 
+    stroke-opacity: 0.5;
+    }
+    
+#circulo1 {
+    fill: blue;
+    fill-opacity: 0.3;
+}
+
+object, embed, img {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: blue;
+}

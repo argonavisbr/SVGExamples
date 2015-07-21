@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    
+    <g transform="translate(350,250)">
+    <ellipse cx="-100" cy="-100" rx="200" ry="100" 
+             stroke-width="1" stroke="black" fill-opacity="0" />
+    <ellipse cx="100" cy="0" rx="200" ry="100" 
+             stroke-width="1" stroke="black" fill-opacity="0" />
+    <path d="M-100,-100 L100,-100 A200,100 0 0,1 -100,0 L-100,-100 z" 
+          stroke="red" stroke-opacity=".5" stroke-width="4" fill-opacity=".2"/>
+    </g>
+</svg>

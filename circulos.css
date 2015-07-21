@@ -1,0 +1,16 @@
+circle {
+    stroke-width: 10; 
+    stroke-opacity: 0.5;
+    }
+
+#c1 {
+    fill: green;
+    stroke: blue;
+    fill-opacity: 0.6;
+}
+    
+#c2 {
+    fill: #f00;
+    stroke: yellow;
+}
+

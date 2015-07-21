@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="r" x="50" y="-10" height="20" width="75" rx="10" fill="#0000ff"/>
+    </defs>
+
+    <g transform="translate(150,150)">
+        <use xlink:href="#r" opacity="1"/>
+        <use xlink:href="#r" opacity=".9"  transform="rotate(30)  scale(0.95)" />
+        <use xlink:href="#r" opacity=".8"  transform="rotate(60)  scale(0.9)"  />
+        <use xlink:href="#r" opacity=".7"  transform="rotate(90)  scale(0.85)" />
+        <use xlink:href="#r" opacity=".6"  transform="rotate(120) scale(0.8)"  />
+        <use xlink:href="#r" opacity=".5"  transform="rotate(150) scale(0.75)" />
+        <use xlink:href="#r" opacity=".4"  transform="rotate(180) scale(0.7) " />
+        <use xlink:href="#r" opacity=".35" transform="rotate(210) scale(0.65)" />
+        <use xlink:href="#r" opacity=".3"  transform="rotate(240) scale(0.6) " />
+        <use xlink:href="#r" opacity=".25" transform="rotate(270) scale(0.55)" />
+        <use xlink:href="#r" opacity=".2"  transform="rotate(300) scale(0.5)"  />
+        <use xlink:href="#r" opacity=".15" transform="rotate(330) scale(0.45)" />
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <polygon points="150,150 50,250 50,150 100,50 200,50 250,100 300,150 350,250 250,250" 
+        fill="red" fill-opacity="0.2"  
+        stroke-opacity="0.5" stroke="navy" 
+        stroke-width="10" stroke-linecap="round" 
+        stroke-linejoin="round" stroke-dasharray="40 20 5 20"/> 
+
+</svg>

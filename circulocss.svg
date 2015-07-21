@@ -1,0 +1,10 @@
+<?xml-stylesheet type="text/css" href="circulos.css"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 300 300">
+   <style>
+    #c2 {fill: yellow} #c1 {fill: blue}
+   </style>
+    <circle r="75" cx="100" cy="100" id="c2"/>
+    <circle r="50" cx="150" cy="150" id="c1"/>
+    
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <polyline points="150,150 
+                       50,150 
+                       100,20 
+                       150,50 
+                       200,200 
+                       50,200 
+                       20,154 
+                       48,82 
+                       32,20
+                       150,150" 
+        fill="yellow" fill-opacity="0.5"  
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-dashoffset="25"
+        stroke-dasharray="10 20"
+        stroke="red" stroke-width="10"/> 
+    
+    <polygon points="450,150 
+        350,150 
+        400,20 
+        450,50 
+        500,200 
+        350,200 
+        320,154 
+        348,82 
+        332,20" 
+        fill="yellow" 
+        stroke-dasharray="25 25"
+        stroke-linejoin="round"
+        fill-rule="evenodd"
+        fill-opacity="0.5"  stroke="red" stroke-width="10"/>
+</svg>
