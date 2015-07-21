@@ -1,0 +1,17 @@
+<html>
+    <head>
+    <style>
+        img, object, embed {
+            border: red dashed 1px;
+            height: 200px; width: 200px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>SVG referenciado</h1>
+        
+        <p>Fallback</p>
+        <img src="svgdemo.svg--" onerror="this.src='circle.png'"/>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+   	   <head>
+            <meta charset="UTF-8">
+            <title>Canvas!</title>
+            <style>
+            canvas, svg {border: solid red 1px}
+            </style>
+       </head>
+       <body>
+            <h1>HTML5 Canvas</h1>
+            
+            <canvas id="desenho1"
+                    height="300" width="300"></canvas>
+           
+           <h1>SVG (usando tags)</h1>
+           
+           <svg height="300" width="300">
+               <rect x="50" y="50" width="150" height="150" fill="#ff459a" />
+           </svg>
+           
+           <h1>SVG (usando SVG DOM)</h1>
+           
+           <svg id="desenho2" height="300" width="300"></svg>
+       </body>
+       
+       <script>
+       // canvas
+       var acanvas = document.getElementById("desenho1");
+       var ctx = acanvas.getContext("2d");
+       
+       ctx.fillStyle = "#ff459a";
+       ctx.fillRect(50,50, 150,150);
+           
+       // svg dom
+       var svgns = "http://www.w3.org/2000/svg";
+       var ansvg = document.getElementById("desenho2");
+       var rect = document.createElementNS(svgns, "rect");
+       rect.setAttribute("x",50);
+       rect.setAttribute("y",50);
+       rect.setAttribute("height",150);
+       rect.setAttribute("width",150);
+       rect.setAttribute("fill","#ff459a");
+       ansvg.appendChild(rect);
+       </script>
+</html>
