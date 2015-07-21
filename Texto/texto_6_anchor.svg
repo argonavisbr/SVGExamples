@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+    <g transform="translate(300,50)" >
+        <g id="grid" stroke="blue" stroke-width="1" stroke-opacity=".8" stroke-dasharray="10 10">
+            <line x1="0" y1="-25" x2="0" y2="150"  />
+            <line x1="-300" y1="0"   x2="300" y2="0" />
+            <line x1="-300" y1="60" x2="300" y2="60" />
+            <line x1="-300" y1="120" x2="300" y2="120" />
+        </g>
+        <text font-family="monospace" font-size="24" font-weight="bold">
+            <tspan x="0" y="0"   text-anchor="start">Pelo inicio (START)</tspan>
+            <tspan x="0" dy="60" text-anchor="middle">Pelo meio (MIDDLE)</tspan>
+            <tspan x="0" dy="60" text-anchor="end">Pelo final (FIM)</tspan>
+        </text>
+    </g>
+</svg>

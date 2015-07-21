@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="-50 -50 200 600" preserveAspectRatio="none">
+
+    <defs>
+        <linearGradient id="vidro" x1="0%" x2="100%" y1="10%" y2="0%">
+            <stop offset="0%" stop-color="rgb(16%,16%,20%)" stop-opacity="0.9"/>
+            <stop offset="25%" stop-color="rgb(90%,90%,100%)" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="rgb(18%,18%,20%)"  stop-opacity="1"/>
+        </linearGradient>
+        
+        <linearGradient id="vidro_fundo" x1="0%" x2="100%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="rgb(26%,26%,40%)"  stop-opacity="1"/>
+            <stop offset="75%" stop-color="rgb(70%,70%,100%)" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="rgb(8%,8%,20%)"  stop-opacity="1"/>
+        </linearGradient>
+        
+        <g id="tanque_cheio">
+            <g id="mesa" fill="rgb(100%,100%,100%)" transform="translate(0,250)">
+                <path d="M0,0
+                    L2,0
+                    C2,-50 98,-50 98,0
+                    L100,0 100,-100 0,-100 Z" />
+            </g>
+            
+            <g id="tanque_tras" stroke="gray" stroke-width="1" fill="url(#vidro_fundo)" fill-opacity="0.5" stroke-opacity="0.1">
+                <path d="M 0,50
+                    C 0,0 100,0 100,50 
+                    L 100,250
+                    C 100,200 0,200 0,250
+                    Z"></path>
+            </g>
+            
+            <g id="tanque_fundo" stroke="black" stroke-width="2" fill="black" fill-opacity="0.3" stroke-opacity="0.1">
+                <ellipse cx="50" cy="250" rx="50" ry="38"></ellipse>
+            </g>
+            
+            <g id="liquido_inteiro" transform="translate(2,220)">
+                <animateMotion  from="0,0" to="0,-150" dur="10s" begin="2s" fill="freeze" accumulate="sum"/>
+                <animateMotion  from="0,-150" to="0,25" dur="6s" begin="15s" fill="freeze" accumulate="sum"/>
+                <animate attributeName="opacity" from="1" to="0.0" dur="5s" begin="19s" fill="freeze"/>
+                
+                <g id="liquido" fill="rgb(0%,30%,0%)" fill-opacity="0.9">
+                    <animateColor fill="freeze" attributeName="fill" dur="10s" from="rgb(0%,30%,0%)" to="rgb(30%,30%,0%)"></animateColor>
+                    <path d="M 0,0
+                        C 0,50 96,50 96,0 
+                        L 96,270
+                        C 96,314 0,314 0,270
+                        Z"></path>
+                </g>
+                <g id="liquido_sup" fill="rgb(0%,40%,0%)" fill-opacity="0.8" stroke-width="1" stroke-opacity="0.3" stroke="rgb(0%,70%,0%)">
+                    <animateColor fill="freeze" attributeName="fill" dur="10s" from="rgb(0%,40%,0%)" to="rgb(40%,40%,0%)"></animateColor>
+                    <ellipse cx="48" cy="3" rx="48" ry="35"></ellipse>
+                </g>
+            </g>
+            
+            <g id="mascara" fill="rgb(100%,100%,100%)" fill-opacity="1" transform="translate(0,248)">
+                <path d="M0,0 L 2,0
+                    C 0,48 98,48 98,2 
+                    L 100,2 L100,400
+                    L 0,400
+                    Z"></path>
+            </g>
+            
+            <g id="tanque_frente" stroke="gray" stroke-width="1" fill="url(#vidro)" stroke-opacity="0.5" fill-opacity="0.9">
+                <path d="M 0,50
+                    C 0,100 100,100 100,50 
+                    L 100,250
+                    C 100,300 0,300 0,250
+                    Z"></path>
+            </g>
+            
+            <g id="tanque_abertura" stroke="black" stroke-width="2" fill="gray" stroke-opacity="0.3" fill-opacity="0.0">
+                <ellipse cx="50" cy="50" rx="50" ry="38"></ellipse>
+            </g>
+        </g>
+        
+        
+
+    </defs>
+    <use xlink:href="#tanque_cheio"></use>
+
+</svg>

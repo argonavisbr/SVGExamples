@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <defs>
+        <radialGradient cx="0" cy="0" r="2" id="arcoiris">
+            <stop offset="0" stop-color="rgb(255,0,0)" />
+            <stop offset="0.25" stop-color="rgb(255,255,64)" />
+            <stop offset="0.5" stop-color="rgb(64,255,64)" />
+            <stop offset="0.75" stop-color="rgb(64,64,255)" />
+            <stop offset="1" stop-color="rgb(128,0,255)" />
+        </radialGradient>
+        <radialGradient cx="0.25" cy="0.25" r="1" id="sombra">
+            <stop offset="0" stop-color="rgb(255,255,255)" />
+            <stop offset="0.5" stop-color="rgb(0,128,255)" />
+            <stop offset="1" stop-color="rgb(128,0,255)" />
+        </radialGradient>
+    </defs>
+
+    <rect x="0" y="0" width="200" height="200" fill="url(#arcoiris)" transform="translate(50,50)"/>
+    <circle cx="100" cy="100" r="100" fill="url(#arcoiris)" transform="translate(300,50)"/>
+    <rect x="0" y="0" width="200" height="200" fill="url(#sombra)" transform="translate(550,50)"/>
+    <circle cx="100" cy="100" r="100" fill="url(#sombra)" transform="translate(800,50)"/>
+</svg>

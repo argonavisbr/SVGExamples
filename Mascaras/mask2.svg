@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/SVG/DTD/svg10.dtd"> 
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <script type="text/ecmascript">
+    
+    
+    function mostrarImagem(id) {
+        var obj = document.getElementById("barcelona_clip")
+    	ocultarImagens();
+		document.getElementById(id).setAttribute("opacity","1.0");	
+	}
+	
+	function ocultarImagens() {
+		document.getElementById("barcelona_clip").setAttribute("opacity","0.0");
+		document.getElementById("tunisia_clip").setAttribute("opacity","0.0");
+	}
+	
+  </script> 
+  
+  	 
+     <defs> 
+        <clipPath id="mascara">
+           <circle r="100" cx="150" cy="150" />
+        </clipPath>
+        <clipPath id="mascara2">
+           <rect x="50" y="50" height="100" width="100"
+                 transform="rotate(45,100,100)"/>
+        </clipPath>
+        
+     	<image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/tunis2008.jpg" 
+	       id="tunisia" />
+	    <image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/barcelona2009.jpg" 
+	       id="barcelona" />
+	       
+	    <use xlink:href="#tunisia" 
+	         id="tunisia_clip"
+	         clip-path="url(#mascara)" />
+	    <use xlink:href="#barcelona" 
+	         id="barcelona_clip"
+	         clip-path="url(#mascara)" />
+     </defs>
+	 
+	 <use id="foto_tunisia"
+	      xlink:href="#tunisia_clip" 
+	      x="-10" y="-10" >
+	 </use>
+	 <use xlink:href="#tunisia" onclick="mostrarImagem('tunisia_clip')"
+	      x="-80" y="-80" 
+	      transform="scale(0.5)"
+	      clip-path="url(#mascara2)" />
+	      
+	<use  id="foto_barcelona"
+	      xlink:href="#barcelona_clip" 
+	      x="-10" y="-10" >
+	</use>
+	<use xlink:href="#barcelona" onclick="mostrarImagem('barcelona_clip')"
+	      x="-80" y="-80" id="boo"
+	      transform="scale(0.5) translate(360)"
+	      clip-path="url(#mascara2)" />
+	      
+	<script>
+	ocultarImagens();
+	mostrarImagem("tunisia_clip");
+	</script>
+</svg>

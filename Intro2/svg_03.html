@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+     <style>
+        svg {border: solid black 1px;
+             position: absolute;
+             left: 0px; top: 0px}
+     </style>
+  </head>
+  <body>
+    <h1>Pagina HTML com SVG</h1>
+    <script> <!--
+		 var circulos;
+		 var tela;
+		 var a = 0; var b = 0;
+		 
+		 function init() {
+			circulos = document.getElementsByTagName("circle");
+			tela = document.getElementById("tela");
+			setInterval("mover()", 100);
+			setInterval("anim()", 100);
+		 }
+		 function randPos() {
+			var trocaSinal = Math.floor(Math.random() * 3);
+			var sinal = 1;
+			if (trocaSinal == 0) { 
+			   sinal = -1; 
+			}
+			return Math.ceil(Math.random() * 25) * sinal;
+		 }
+		 function mover() {
+			for(var i = 0; i < circulos.length; i++) {
+			   var x = parseInt( circulos[i].getAttribute("cx") );
+			   var y = parseInt( circulos[i].getAttribute("cy") );
+			   circulos[i].setAttribute("cx", x = x + randPos());
+			   circulos[i].setAttribute("cy", y = y + randPos());
+			}
+		 }
+		 
+          
+          function anim() {
+             tela.style.top  = ++a + "px";
+             tela.style.left = ++b + "px";
+          }
+	  --></script>
+	<svg id="tela" width="500" height="400" onload="init()">
+
+	  <g id="grupo" fill-opacity="0.5" stroke-opacity="0.3" stroke="black">
+		<circle r="50" cx="100" cy="100" fill="green"/>
+		<circle id="c2" r="50" cx="120" cy="120" fill="red"/>
+		<circle r="50" cx="140" cy="140" fill="blue"/>
+		<circle r="50" cx="160" cy="160" fill="#aaff49"/>
+		<circle r="50" cx="180" cy="180" fill="rgb(255,75,192)"/>
+	  </g>
+	</svg>
+</body>
+</html>

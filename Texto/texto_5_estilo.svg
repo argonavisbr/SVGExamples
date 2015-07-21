@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="500px" height="500px" viewBox="0 0 1000 1000">
+    <style type="text/css">
+        #decoration {text-decoration: overline underline line-through;}
+        #linespace  {letter-spacing: 1em}
+        #wordspace  {word-spacing: 1cm}
+        #stretch    {font-stretch: ultra-expanded}
+        #squish     {font-stretch: ultra-condensed}
+        #nokern     {kerning: 0}
+        #kernauto   {kerning: auto}
+        #kernjoin   {kerning: -8} 
+    </style>
+    
+    <text font-family="corbel, sans-serif" font-size="20" x="50" y="100" transform="scale(2)">
+        <tspan id="decoration">Texto cheio de linhas</tspan>
+        <tspan dy="30" x="50" id="linespace">Letras espacadas</tspan>
+        <tspan dy="30" x="50" id="wordspace">Muito espaco entre palavras</tspan>
+        <tspan dy="30" x="50" id="stretch">Texto esticado</tspan>
+        <tspan dy="30" x="50" id="squish">Texto espremido</tspan>
+        <tspan dy="30" x="50" textLength="200">200 pixels</tspan>
+        <tspan dy="30" x="50" textLength="200" lengthAdjust="spacingAndGlyphs">200 pixels de largura</tspan>
+        <tspan dy="30" x="50" textLength="200" lengthAdjust="spacingAndGlyphs">Texto com mais letras 200 pixels de largura</tspan>
+        <tspan dy="30" x="50">H<tspan baseline-shift="sub">2</tspan>O</tspan>
+        <tspan>E = mc<tspan baseline-shift="super">2</tspan></tspan>
+        <tspan dy="30" x="50" id="nokern">VAVAV</tspan>
+        <tspan id="kernauto">VAVAV</tspan>
+        <tspan id="kernjoin">VAVAV</tspan>
+    </text>
+</svg>

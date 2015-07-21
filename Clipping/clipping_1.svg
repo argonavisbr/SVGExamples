@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500px" height="500px" viewBox="0 0 500 500">
+    <defs>
+        <clipPath id="poly">
+            <polygon points="50,50 300,300 300,50 100,50 50,300 300,150 300,250" clip-rule="evenodd" />
+            <circle r="50" cx="200" cy="300" clip-rule="evenodd"/>
+        </clipPath>
+    </defs>
+    
+    <image x="0" y="0" height="500" width="600" xlink:href="lua.png" clip-path="url(#poly)" transform="translate(20,20)"/>
+</svg>

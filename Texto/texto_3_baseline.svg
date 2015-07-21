@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="-10 -50 200 200">
+    <rect x="0" y="0" height="36" width="180" fill-opacity="0" stroke-width="1" stroke="red" stroke-opacity="0.5" stroke-dasharray="5 5"/>
+    <text font-size="36" x="0" y="0">Agora</text>
+</svg>

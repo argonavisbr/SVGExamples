@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+    <defs>
+        <linearGradient x1="0" y1="0.2" x2="0.9" y2="0.1" id="arcoiris">
+            <stop offset="0" stop-color="rgb(255,0,0)" />
+            <stop offset="0.3" stop-color="rgb(180,180,0)" />
+            <stop offset="0.6" stop-color="rgb(0,180,0)" />
+            <stop offset="0.8" stop-color="blue" />
+            <stop offset="1" stop-color="rgb(128,0,220)" />
+        </linearGradient>
+        
+        <filter id="f3d" x="-300" y="-300" height="500" width="500">
+            <!-- Brilho -->
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" 
+                            result="borrao" />
+            <feFlood        flood-color="orange" flood-opacity="1" 
+                            result="laranja" />
+            <feComposite    in="laranja"  in2="borrao" operator="in" 
+                            result="brilho" />
+            
+            <!-- Sombra -->
+            <feOffset in="borrao" dx="8" dy="8" result="sombra" />
+
+            <!-- Texto em 3D -->
+            <feSpecularLighting in="borrao"  surfaceScale="5" specularConstant="1" 
+                specularExponent="15" lighting-color="white"
+                result="fonteDeLuz">
+                <fePointLight x="-50" y="-200" z="300"/>
+            </feSpecularLighting>
+            <feComposite in="fonteDeLuz"    in2="SourceAlpha" operator="in" 
+                         result="iluminacao"/>
+            <feComposite in="SourceGraphic" in2="iluminacao"  operator="arithmetic" 
+                         k1="0" k2="1" k3="1" k4="0"
+                         result="resultado" />
+            
+            <!-- Combinacao dos filtros -->
+            <feMerge>
+                <feMergeNode in="sombra"/>
+                <feMergeNode in="brilho"/>
+                <feMergeNode in="resultado"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g transform="translate(50,50) scale(2)">
+    <text id="text" font-weight="bold" font-family="impact" 
+          font-size="150" fill="url(#arcoiris)" x="0" y="160" filter="url(#f3d)">SVG</text>
+    </g>
+</svg>

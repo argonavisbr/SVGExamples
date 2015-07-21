@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!doctype html>
+<html>
+<head></head>
+<body>
+<h1>SVG</h1>
+<svg>
+
+     <defs> 
+        <clipPath id="mascara">
+           <circle r="100" cx="150" cy="150" />
+        </clipPath>
+        <clipPath id="mascara2">
+           <rect x="50" y="50" height="100" width="100"
+                 transform="rotate(45,100,100)"/>
+        </clipPath>
+        
+     	<image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/tunis2008.jpg" 
+	       id="tunisia" />
+	    <image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/barcelona2009.jpg" 
+	       id="barcelona" />
+	       
+	    <use xlink:href="#tunisia" 
+	         id="tunisia_clip"
+	         clip-path="url(#mascara)" />
+	    <use xlink:href="#barcelona" 
+	         id="barcelona_clip"
+	         clip-path="url(#mascara)" />
+     </defs>
+	 
+	 <use id="foto_tunis"
+	      xlink:href="#tunisia_clip" 
+	      x="-10" y="-10" >
+	 </use>
+	 <use xlink:href="#tunisia" 
+	      x="-80" y="-80" 
+	      transform="scale(0.5)"
+	      clip-path="url(#mascara2)" />
+	      
+	<use  id="foto_barcelona"
+	      xlink:href="#barcelona_clip" 
+	      x="-10" y="-10" >
+	</use>
+	<use xlink:href="#barcelona" 
+	      x="-80" y="-80" 
+	      transform="scale(0.5) translate(360)"
+	      clip-path="url(#mascara2)" />
+	      
+	
+	
+</svg>
+</body>
+</html>

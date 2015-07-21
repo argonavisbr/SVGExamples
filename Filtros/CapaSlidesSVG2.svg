@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 600 900">
+    <defs>
+        <linearGradient x1="0" y1="0" x2="1" y2="0" id="degrade">
+            <stop offset="0" stop-color="red" />
+            <stop offset="0.5" stop-color="yellow" />
+            <stop offset="1" stop-color="blue" />
+        </linearGradient>
+        <filter id="f3d" x="-300" y="-300" height="500" width="500">
+            <!-- Sombra -->
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+            <feOffset in="blur" dx="8" dy="8" result="sombra"/>
+            <feSpecularLighting in="blur" surfaceScale="5" specularConstant="1" 
+                specularExponent="15" lighting-color="white"  
+                result="luz">
+                <fePointLight x="-50" y="-200" z="300"/>
+            </feSpecularLighting>
+            
+            <!-- Objeto iluminado -->
+            <feComposite in="luz"           in2="SourceAlpha" operator="in" result="iluminacao"/>
+            <feComposite in="SourceGraphic" in2="iluminacao"  operator="arithmetic" 
+                k1="0" k2="1" k3="1" k4="0" result="resultado"/>
+            
+            <!-- Brilho -->
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="glow"/>
+            <feFlood flood-color="magenta" flood-opacity="1" in="glow" result="yellowGlow" />
+            <feComposite in="yellowGlow" in2="glow" operator="in" result="brilho" />
+            
+            <feMerge>
+                <feMergeNode in="sombra"/>
+                <feMergeNode in="brilho"/>
+                <feMergeNode in="resultado"/>
+            </feMerge>
+            
+            
+        </filter>
+    </defs>
+    <g transform="translate(50,50)">
+    <text id="text" font-weight="bold" font-family="corbel" font-size="150" fill="url(#degrade)" x="0" y="160" filter="url(#f3d)">SVG  3</text>
+    <g id="stardot" transform="translate(100,50)" filter="url(#f3d)">
+        <polygon id="star" points="250,0 400,500 0,200 500,200 100,500" fill="red" fill-rule="evenodd"/>
+        <circle  id="circ" cx="250" cy="283" r="75" fill="blue"  />
+    </g>
+    <image xlink:href="TheFish.png" width="400" height="300" x="100" y="550" filter="url(#f3d)"></image>
+    </g>
+</svg>

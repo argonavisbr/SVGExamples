@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
+
+    <g transform="translate(50,50)" stroke="blue" stroke-width="1">
+        <line x1="0" y1="0"   x2="300" y2="0" />
+        <line x1="0" y1="100" x2="300" y2="100" />
+        <line x1="0" y1="200" x2="300" y2="200" />
+        <line x1="0" y1="300" x2="300" y2="300" />
+    </g>
+    <g transform="translate(50,50)" text-anchor="start" font-family="monospace" font-size="24" font-weight="bold">
+        <text x="0" y="0"    dominant-baseline="ideographic">ideographic baseline</text>
+        <text x="0" y="100"  dominant-baseline="auto">auto baseline</text>
+        <text x="0" y="200"  dominant-baseline="mathematical">mathematical baseline</text>
+        <text x="0" y="300"  dominant-baseline="hanging">hanging baseline</text>
+    </g>
+</svg>

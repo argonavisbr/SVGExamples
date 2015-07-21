@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600">
+    <defs>
+        <pattern id="peixes" patternUnits="userSpaceOnUse"
+            x="0" y="0" width="80" height="50"
+            viewBox="0 0 20 10" >
+            <image xlink:href="TheFish.png" x="0" y="0" width="24" height="12" />
+        </pattern>
+    </defs>
+    
+    <rect x="0" y="0" width="300" height="300" fill="url(#peixes)" transform="translate(50,50)" />
+</svg>

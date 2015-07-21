@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="500" height="400"
+     >
+  <script src="svg_03.js" type="text/javascript" ></script>
+  <g id="grupo" fill-opacity="0.5" stroke-opacity="0.3" stroke="black">
+    <circle r="50" cx="100" cy="100" fill="green"/>
+    <circle id="c2" r="50" cx="120" cy="120" fill="red"/>
+    <circle r="50" cx="140" cy="140" fill="blue"/>
+    <circle r="50" cx="160" cy="160" fill="#aaff49"/>
+    <circle r="50" cx="180" cy="180" fill="rgb(255,75,192)"/>
+  </g>
+  <script>init();</script>
+</svg>

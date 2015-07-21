@@ -1,0 +1,12 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <rect id="preto"  x="0" y="0" width="20" height="20" fill="rgb(64,32,32)" />
+        <rect id="branco" x="0" y="0" width="20" height="20" fill="rgb(255,225,200)" />
+    </defs>
+    <g transform="translate(10,10)">
+        <use xlink:href="#preto" />
+        <use xlink:href="#branco" transform="translate(20)"/>
+        <use xlink:href="#branco" transform="translate(0,20)"/>
+        <use xlink:href="#preto"  transform="translate(20,20)"/>
+    </g>
+</svg>

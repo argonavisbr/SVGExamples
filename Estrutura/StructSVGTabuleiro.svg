@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <defs>
+        <rect id="preto"  x="0" y="0" width="20" height="20" fill="rgb(64,32,32)" />
+        <rect id="branco" x="0" y="0" width="20" height="20" fill="rgb(255,225,200)" />
+        
+        <symbol id="quatroCasas" viewBox="0 0 40 40">
+            <use xlink:href="#preto" />
+            <use xlink:href="#branco" transform="translate(20)"/>
+            <use xlink:href="#branco" transform="translate(0,20)"/>
+            <use xlink:href="#preto"  transform="translate(20,20)"/>
+        </symbol>
+        
+        <symbol id="fileiraDupla" viewBox="0 0 160 40">
+            <use xlink:href="#quatroCasas" />
+            <use xlink:href="#quatroCasas" transform="translate(40)" />
+            <use xlink:href="#quatroCasas" transform="translate(80)" />
+            <use xlink:href="#quatroCasas" transform="translate(120)" />
+        </symbol>
+        
+        <symbol id="tabuleiro" viewBox="0 0 160 160">
+            <use xlink:href="#fileiraDupla" />
+            <use xlink:href="#fileiraDupla" transform="translate(0,40)" />
+            <use xlink:href="#fileiraDupla" transform="translate(0,80)" />
+            <use xlink:href="#fileiraDupla" transform="translate(0,120)" />
+        </symbol>
+    </defs>
+    <use xlink:href="#tabuleiro" />
+</svg>

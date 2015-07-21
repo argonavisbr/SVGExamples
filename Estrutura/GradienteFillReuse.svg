@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <defs>
+        <linearGradient id="corPretas">
+            <stop offset="0" stop-color="rgb(64,32,32)" />
+        </linearGradient>
+        <linearGradient id="corBrancas">
+            <stop offset="0" stop-color="rgb(255,225,200)" />
+        </linearGradient>
+        <rect id="rp" x="0" y="0" width="20" height="20" fill="url(#corPretas)"/>
+        <rect id="rb" x="0" y="0" width="20" height="20" fill="url(#corBrancas)"/>
+        
+        <g id="filadupla">
+            <g id="fila1">
+                <use xlink:href="#rp" transform="translate(20)" />
+                <use xlink:href="#rb" transform="translate(40)" />
+                <use xlink:href="#rp" transform="translate(60)" />
+                <use xlink:href="#rb" transform="translate(80)" />
+                <use xlink:href="#rp" transform="translate(100)" />
+                <use xlink:href="#rb" transform="translate(120)" />
+                <use xlink:href="#rp" transform="translate(140)" />
+                <use xlink:href="#rb" transform="translate(160)" />
+            </g>
+            <g id="fila2" transform="translate(0,20)">
+                <use xlink:href="#rb" transform="translate(20)" />
+                <use xlink:href="#rp" transform="translate(40)" />
+                <use xlink:href="#rb" transform="translate(60)" />
+                <use xlink:href="#rp" transform="translate(80)" />
+                <use xlink:href="#rb" transform="translate(100)" />
+                <use xlink:href="#rp" transform="translate(120)" />
+                <use xlink:href="#rb" transform="translate(140)" />
+                <use xlink:href="#rp" transform="translate(160)" />
+            </g>
+        </g>
+        <g id="tabuleiro">
+            <use xlink:href="#filadupla" />
+            <use xlink:href="#filadupla" transform="translate(0,40)" />
+            <use xlink:href="#filadupla" transform="translate(0,80)" />
+            <use xlink:href="#filadupla" transform="translate(0,120)" />
+        </g>
+        <g id="peao">
+            <circle cx="15" cy="15" r="5" />
+            <rect x="5" y="20" height="5" width="20" />
+            <rect x="0" y="40" height="5" width="30" />
+            <path d="M3,40 L10,25 L20,25 L26,40 z" />
+        </g>
+        <g id="peaoBranco" fill="url(#corBrancas)" stroke="url(#corPretas)">
+            <use xlink:href="#peao" />
+        </g>
+        <g id="peaoPreto" fill="url(#corPretas)" stroke="url(#corBrancas)">
+            <use xlink:href="#peao" />
+        </g>
+    </defs>
+    <use xlink:href="#tabuleiro" transform="translate(50,50) scale(3)"></use>
+    <use xlink:href="#peaoBranco" transform="translate(125,110)"></use>
+    <use xlink:href="#peaoBranco" transform="translate(185,110)"></use>
+    <use xlink:href="#peaoBranco" transform="translate(245,110)"></use>
+    <use xlink:href="#peaoPreto"  transform="translate(245,230)"></use>
+</svg>

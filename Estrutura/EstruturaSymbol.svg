@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+    <defs>
+       <!-- <linearGradient id="arcoiris"> ... </linearGradient>
+        <filter id="desfoque"> ... </filter>
+        <pattern id="grade"> ... </pattern> -->
+        <marker id="seta" viewBox="0 0 10 10" refX="5" refY="5" orient="auto" markerHeight="5" markerWidth="3">
+            <polygon points="0,0 10,5 0,10" />
+        </marker>
+        <symbol id="diodo" viewBox="0 0 10 10">
+            <title>Diodo</title>
+            <desc>Simbolo de diodo comum.</desc>
+            <g>
+                <rect x="4" y="0" height="10" width="2" fill="white" />
+                <polygon points="0,0 10,0 5,8" />
+                <rect x="0" y="8" width="10" height="2" />
+            </g>
+        </symbol>
+        <symbol id="transistor" viewBox="-1 -1 22 22">
+            <title>Transistor PNP</title>
+            <g>
+                <circle r="10" cx="10" cy="10" stroke-width="1" stroke="black" fill="white" />
+                <rect x="3" y="7" height="2" width="14"/>
+                <line id="base" x1="10" x2="10" y1="-1" y2="8"    stroke-width=".9" stroke="black"/>
+                <line id="coletor" x1="10" x2="20" y1="9" y2="20" stroke-width=".9" stroke="black"/>
+                <line id="emissor" x1="0" x2="9" y1="20" y2="10"  stroke-width=".9" stroke="black" marker-end="url(#seta)" />
+            </g>
+        </symbol>
+        <marker id="setaDiodo" viewBox="0 0 10 10" refX="0" refY="5" orient="auto" markerUnits="userSpaceOnUse" markerWidth="25" markerHeight="25">
+            <use xlink:href="#diodo" x="0" y="0" height="10" width="10" transform="rotate(-90,5,5)" />
+        </marker>
+        <marker id="setaTransistor" viewBox="0 0 10 10" refX="0" refY="5" orient="auto" markerUnits="userSpaceOnUse" markerWidth="50" markerHeight="50">
+            <use xlink:href="#transistor" x="0" y="0" height="10" width="10" transform="rotate(-90,5,5)" />
+        </marker>
+    </defs>
+
+    <use xlink:href="#diodo" x="50" y="50" height="25" width="25"/>
+    <use xlink:href="#transistor" x="100" y="50" height="50" width="50"/>
+    
+    <polyline points="125,150 150,150 199,150" marker-mid="url(#setaDiodo)" stroke="red" stroke-width="2"/>
+    
+    <polyline points="125,200 150,200" marker-end="url(#setaTransistor)" stroke="red" stroke-width="2"/>
+    <polyline points="198,178 198,100" stroke="red" stroke-width="2" />
+    <polyline points="198,222 198,250" stroke="red" stroke-width="2" />
+    
+</svg>

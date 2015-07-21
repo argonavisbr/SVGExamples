@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="500" height="500">
+   <script type="text/ecmascript" xlink:href="script_4.js" />
+    <circle cx="125" cy="40" r="5"   fill="green" onclick="moverCirculo(evt)"/>
+    <circle cx="225" cy="100" r="10" fill="blue" onclick="moverCirculo(evt)"/>
+   <circle cx="325" cy="170" r="15" fill="red"  onclick="moverCirculo(evt)"/>
+</svg>

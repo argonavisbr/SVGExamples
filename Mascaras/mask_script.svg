@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/SVG/DTD/svg10.dtd"> 
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+     
+     <script type="text/ecmascript">
+		function mostrarImagem(objeto) {
+			//var id = evt.target.getAttribute("id");
+			alert(objeto.getAttribute("id"));
+			alert(document.getElementById("barcelona"));
+			var foto = document.getElementById("#foto" + id);
+			
+			foto.style.opacity = "0.0";
+			
+		}
+	 </script>
+	 
+     <defs> 
+        <clipPath id="mascara">
+           <circle r="100" cx="150" cy="150" />
+        </clipPath>
+        <clipPath id="mascara2">
+           <rect x="50" y="50" height="100" width="100"
+                 transform="rotate(45,100,100)"/>
+        </clipPath>
+        
+     	<image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/tunis2008.jpg" 
+	       id="tunisia" />
+	    <image x="20" y="50" height="200" width="300"
+	       xlink:href="imagens/barcelona2009.jpg" 
+	       id="barcelona" />
+	       
+	    <use xlink:href="#tunisia" 
+	         id="tunisia_clip"
+	         clip-path="url(#mascara)" />
+	    <use xlink:href="#barcelona" 
+	         id="barcelona_clip"
+	         clip-path="url(#mascara)" />
+     </defs>
+	 
+	 <use id="foto_tunisia"
+	      xlink:href="#tunisia_clip" 
+	      x="-10" y="-10" >
+	 </use>
+	 <use xlink:href="#tunisia" 
+	      id="_tunisia"
+	      x="-80" y="-80" 
+	      transform="scale(0.5)"
+	      clip-path="url(#mascara2)" />
+	      
+	<use  id="foto_barcelona"
+	      xlink:href="#barcelona_clip" 
+	      x="-10" y="-10" >
+	</use>
+	<use xlink:href="#barcelona" onclick="mostrarImagem(evt)"
+	     id="_barcelona"
+	      x="-80" y="-80" 
+	      transform="scale(0.5) translate(360)"
+	      clip-path="url(#mascara2)" />
+	      
+	
+	
+</svg>

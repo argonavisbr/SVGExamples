@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+    <image id="abissal" xlink:href="TheFish.png" height="100" width="250" x="50" y="50" />
+    <g stroke="blue" stroke-width="2">
+        <line x1="200" x2="200" y1="175" y2="225"/>
+        <line x1="350" x2="350" y1="175" y2="225"/>
+        <line x1="500" x2="500" y1="175" y2="225"/>
+        <line x1="650" x2="650" y1="175" y2="225"/>
+    </g>
+    <text x="270" y="200">50</text>
+    <text x="415" y="200">100</text>
+    <text x="565" y="200">300</text>
+    
+    <animate attributeName="x" 
+        values="50;200;350;500" 
+        keyTimes="0;0.333;0.667;1" 
+        keySplines="0.0,0.0  1.0, 1.0; 
+                    0.5,0.0  0.5, 1.0; 
+                    0.0,0.75 0.25,1.0;"
+        calcMode="spline"
+        dur="4s" begin="click" fill="freeze" xlink:href="#abissal" />
+</svg>

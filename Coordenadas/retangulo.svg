@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="500px" height="500px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="150" height="200"
+        fill="red"  />
+  <rect x="75" y="75" width="150" height="200"
+    fill="blue" fill-opacity="0.5" />
+  <rect x="100" y="100" width="150" height="200"
+    fill="green" fill-opacity="0.2">
+    <animateMotion dur="5" from="100,100" to="-200,200"></animateMotion>
+  </rect>
+  
+</svg>
+

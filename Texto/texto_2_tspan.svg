@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="0 0 200 200">
+    <text font-size="12" x="5" y="15">
+        <tspan dx="0" dy="0 0 0 15 0 0 0 0 15 0 0 0 0 15 0 0 0 0 0 0 15 0 0 0 0">Um Dois Tres Quatro Cinco</tspan>
+        <tspan x="5"  dy="0 0 0 -15 0 0 0 0 -15 0 0 0 0 -15 0 0 0 0 0 0 -15 0 0 0 0">Um Dois Tres Quatro Cinco</tspan>
+    </text>
+</svg>

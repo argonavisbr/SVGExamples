@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600" width="600px" height="600px">
+    <defs>
+        <text id="svg">Scalable Vector Graphics</text>
+    </defs>
+    <text x="50" font-weight="bold" font-style="italic" y="100" font-size="12pt" lengthAdjust="spacingAndGlyphs" font-family="arial">
+    <tspan textLength="250" x="100">Os arquivos foram criados com</tspan>
+    <tspan textLength="300"  dy="30" x="50"><tref xlink:href="#svg"/> 1.1</tspan>
+    <tspan textLength="300" dy="30" x="50">e as animacoes geradas com </tspan>
+    <tspan textLength="300" dy="30" x="50"><tref xlink:href="#svg" /> 1.2 Tiny.</tspan>
+    </text>
+</svg>
