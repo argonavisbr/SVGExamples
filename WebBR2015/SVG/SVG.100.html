@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8"/>
+    <title>Conferência W3C 2015 : SVG</title>
+    <link rel="stylesheet" href="slides.css" />
+    <style>
+        .svg {
+            position: absolute;
+            left: -40px;
+            top: 177px;
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slide">
+    <a href="SVG.101.html">
+        <img src="SVG.100.png"/>
+    </a>
+</div>
+
+<div class="svg">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -50 800 600" width="100%" height="100%">
+        <defs>
+            <filter id="raios" filterUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                <feGaussianBlur stdDeviation="6"/>
+            </filter>
+        </defs>
+        <circle fill="rgb(90%,60%,0%)" r="35" cx="360" cy="225" filter="url(#raios)"/>
+        <circle fill="white"  r="25" cx="360" cy="225"/>
+
+        <g stroke="rgb(255,100,255)" stroke-width="1" stroke-opacity="0.3" fill="none">
+            <path id="orbita"
+                  d="M 20,175
+                     A 244,220 0 1,0 493,175
+                     A 244,220 0 0,0 20,175"/>
+        </g>
+        <image xlink:href="PayMonster.svg" height="80" width="200" x="0" y="-60">
+            <animateMotion dur="10s" repeatCount="indefinite" rotate="auto" calcMode="spline"
+                           keyTimes="0;1" keyPoints="0;1"
+                           keySplines="0.75,0.25  0.25, 0.75">
+                <mpath xlink:href="#orbita"/>
+            </animateMotion>
+        </image>
+
+    </svg>
+</div>
+
+
+</body>
+</html>

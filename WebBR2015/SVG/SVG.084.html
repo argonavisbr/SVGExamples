@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8"/>
+    <title>Conferência W3C 2015 : SVG</title>
+    <link rel="stylesheet" href="slides.css" />
+    <style>
+        .svg {
+            position: absolute;
+            left: 450px;
+            top: 450px;
+            width: 250px;
+        }
+        #whitebar {
+            background-color: white;
+            width: 60%;
+            position: absolute;
+            left: 250px;
+            top: 670px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slide">
+    <a href="SVG.085.html">
+        <img src="SVG.084.png"/>
+    </a>
+</div>
+
+<div id="whitebar"></div>
+
+<div class="svg">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" width="100%" height="100%">
+        <script type="text/ecmascript"><![CDATA[
+        function acende(evt) {
+            evt.target.setAttribute("opacity", "1.0");
+        }
+        function apaga(evt) {
+            evt.target.setAttribute("opacity", "0.4");
+        }
+        ]]></script>
+        <g>
+            <rect x="10"  y="100" width="45" height="45" fill="red" opacity="0.4" onmouseover="acende(evt);" onmouseout="apaga(evt);"/>
+            <rect x="65" y="100" width="45" height="45" fill="blue" opacity="0.4" onmouseover="acende(evt);" onmouseout="apaga(evt);"/>
+        </g>
+    </svg>
+</div>
+
+
+</body>
+</html>

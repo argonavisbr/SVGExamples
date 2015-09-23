@@ -1,0 +1,14 @@
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+  /*  min-width: 99vw;
+    max-height: 99vh; */
+    height: 768px;
+    width: 1024px;
+}
+.slide img {
+   /* min-width: 99vw; max-height: 99vh */
+    height: 768px;
+    width: 1024px;
+}
